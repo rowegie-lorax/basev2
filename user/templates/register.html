@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="/api/user/" method="POST">
+        {% csrf_token %}
+        <input type="email" name="email">
+        <input type="text" name="phone_number">
+        <input type="password" name="password">
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>
